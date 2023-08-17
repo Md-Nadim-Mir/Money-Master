@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+
+    <!-- link favicon -->
+    <link rel="shortcut icon" href="./download (1).png" type="image/x-icon">
+
+    <!-- tailwind and dasiUI css link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+
+<body>
+
+    <h1 class="text-3xl md:text-5xl text-center font-extrabold text-[#2da9a5] mt-2 md:mt-10">Money Master</h1>
+
+    <div class="m-2 md:m-20 flex flex-col md:flex-row gap-4">
+
+        <div >
+             <img class="w-full" style="height: 900px;" src="./money.jpg" alt="">
+        </div>
+
+        <div class="border-2 text-center mx-20 px-20 ">
+
+                <h1 class="text-2xl md:text-4xl text-center font-extrabold text-[#4444dc] mt-2 md:mt-10 pb-2" >Income</h1>
+
+
+                <div class="flex pt-5">
+
+                    <h1 class="mr-5 p-2 text-2xl font-extrabold text-[#ec3a57]">Income: </h1> 
+                    <input id="income-field" class="w-3/4 text-2xl bg-pink-900 text-[aqua] font-extrabold p-2 rounded-md text-center placeholder-white" type="text" placeholder="1000">
+                    
+                </div>
+
+
+                <h1 class="text-2xl md:text-4xl text-center font-extrabold text-[#4444dc] mt-2 md:mt-10 pb-2" >Express</h1>
+
+
+                <div class="flex pt-5">
+
+                    <h1 class="mr-5 p-2 text-2xl font-extrabold text-[#ec3a57]">Rent : </h1> 
+                    <input id="rent-field" class="text-2xl bg-pink-900 text-[aqua] font-extrabold p-2 rounded-md text-center placeholder-white" type="text" placeholder="1000">
+                    
+                </div>
+
+                <div class="flex pt-5">
+
+                    <h1 class="mr-5 m-2 text-2xl font-extrabold text-[#ec3a57]">Food : </h1> 
+                    <input id="food-field" class="text-2xl bg-pink-900 text-[aqua] font-extrabold p-2 rounded-md text-center placeholder-white" type="text" placeholder="1000">
+                    
+                </div>
+
+                <div class="flex pt-5 pb-5">
+
+                    <h1 class="mr-5 p-2 text-2xl font-extrabold text-[#ec3a57]">Cloth: </h1> 
+                    <input id="cloth-field" class="text-2xl bg-pink-900 text-[aqua] font-extrabold p-2 rounded-md text-center placeholder-white" type="text" placeholder="1000">
+                    
+                </div>
+
+
+                <div class="flex justify-center items-center pt-5 pb-5">
+
+                    <button id="Calculate-button" class="btn btn-primary font-bold ">Calculate</button>
+                    
+                </div>
+
+
+                <h1 class="text-center text-2xl font-bold">Total Express : $<span id="express-total">1000</span></h1>
+
+                <h1 class="text-center text-2xl font-bold my-3">Balance : $<span id="balance-total">1000</span></h1>
+
+
+                <div class="flex pt-5 pb-5">
+
+                    <h1 class="mr-5 p-2 text-2xl font-extrabold text-[#ec3a57]">Save: </h1> 
+                    <input id="save-parcentage-field" class="w-1/2 text-2xl bg-pink-900 text-[aqua] font-extrabold p-2 rounded-md text-center placeholder-white" type="text" placeholder="20">
+                    <h1 class="mr-5 p-2 text-2xl font-extrabold text-[#ec3a57]"> % </h1> 
+                    <button id="save-button" class="btn btn-primary font-bold ">Save</button>
+                    
+                    
+                </div>
+
+
+                <h1 class="text-center text-2xl font-bold">Saving Amount : $<span id="saving-amount">1000</span></h1>
+
+                <h1 class="text-center text-2xl font-bold my-3">Remaining Balance : $<span id="remaining-amount">1000</span></h1>
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+
+
+<!-- js script added -->
+<script src="money.js"></script>
+</html>
